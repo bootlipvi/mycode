@@ -19,7 +19,7 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = "us-west-2"
+  region  = "us-east-1"
 }
 
 
@@ -29,7 +29,7 @@ resource <resource type> <resource name>  */
 
 resource "aws_instance" "app_server" {
   # ami points to an ubuntu image (these are unique per region)
-  ami           = "ami-830c94e3"
+  ami           = "ami-0005e0cfe09cc9050"
   # size of the machine is t2.micro
   instance_type = "t2.micro"
   # tag is metadata information
